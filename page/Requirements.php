@@ -16,67 +16,75 @@
       <nav class="nav1">
         <ul>
           <li><a href="../index.php">About Me</a></li>
-          <li><a href="../page/Requirements.php">AD-Task-1</a></li>
+          <li><a href="../page/Requirements.php">AD-Task-2</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
   <div class="container">
-    <h1 style="text-align: center; margin-bottom: 20px;">Declaration</h1>
-    <div class="info-wrapper">
-      <div class="info-box">
-        <?php
-          $name = "Quervie Manrique";
-          $course = "BSIT";
-          $year = 3;
-          $isGraduating = false;
 
-          echo "<h2>👨‍🎓 Student Info</h2>";
-          echo "<p><strong>Name:</strong> $name</p>";
-          echo "<p><strong>Course:</strong> $course</p>";
-          echo "<p><strong>Year:</strong> $year</p>";
-        ?>
-        <p><strong>Status:</strong> <span id="status-text"><?php echo $isGraduating ? "🎓 Graduating" : "📚 Still Studying"; ?></span></p>
-        <button id="statusButton" onclick="toggleStatus()" style="margin-top: 15px; padding: 10px 20px; border-radius: 10px; background: #8e44ad; color: white; border: none; cursor: pointer;">
-          Switch to Graduating
-        </button>
-      </div>
-
-      <div class="info-image">
-        <img src="/assets/img/declaration.png" alt="Code Screenshot" />
-      </div>
-    </div>
-
-    <h1 style="text-align: center; margin-bottom: 20px;">Conditional</h1>
-<div id="graduation-section" class="info-wrapper" style="display: none; margin-top: 20px;">
-
-      <div class="info-box">
-        <h2>🎉 Graduation Section</h2>
-        <p>Congratulations on reaching this milestone!</p>
-        <p>You've shown dedication, resilience, and passion.</p>
-        <p>Wishing you great success in your next chapter! 🚀</p>
-      </div>
-      <div class="info-image">
-        <img src="/assets/img/grad.png" alt="Graduation Image" />
-</div>
-    </div>
-    <h1 style="text-align: center; margin-bottom: 20px;">Looping</h1>
+<h1 style="text-align: center; margin: 40px 0 20px;">Arrays</h1>
 <div class="info-wrapper" style="margin-top: 20px;">
-<div class="info-box">
-      <h2>📅 Academic Years</h2>
-      <?php
-$years = ["1st Year", "2nd Year", "3rd Year", "4th Year"];
-foreach ($years as $yr) {
-        echo "<p>✔️ Completed: $yr</p>";
-}
-      ?>
+  <div class="info-box">
+    <?php
+      $hobbies = ["Playing Sports", "Dancing", "Web Designing", "Watching Anime", "Exploring Tech", "Traveling"];
+      foreach ($hobbies as $hobby) {
+          echo "<p>💡 $hobby</p>";
+      }
+    ?>
+  </div>
+  <div class="info-image">
+    <img src="/assets/img/array.png" alt="Hobbies Image" />
+  </div>
 </div>
-<div class="info-image">
-      <img src="/assets/img/looping.png" alt="Loop Image" />
-    </div>
+<h1 style="text-align: center; margin: 40px 0 20px;">Dictionaries</h1>
+<div class="info-wrapper" style="margin-top: 20px;">
+  <div class="info-box">
+    <?php
+      $skills = [
+        "HTML" => "Expert",
+        "CSS" => "Advanced",
+        "PHP" => "Intermediate",
+        "JavaScript" => "Intermediate",
+        "MySQL" => "Basic"
+      ];
+      foreach ($skills as $skill => $level) {
+          echo "<p>🛠️ <strong>$skill:</strong> $level</p>";
+      }
+    ?>
+  </div>
+  <div class="info-image">
+    <img src="/assets/img/Diction.png" alt="Skills Image" />
+  </div>
 </div>
+<h1 style="text-align: center; margin: 40px 0 20px;">🔧 Using Functions</h1>
+<div class="info-wrapper" style="margin-top: 20px;">
+  <div class="info-box">
+    <?php
 
+      function greetStudent($name) {
+          return "Hello, $name! 👋 Welcome to AD-Task-2.";
+      }
+
+      function calculateGPA($grades) {
+          $total = array_sum($grades);
+          $count = count($grades);
+          return $count > 0 ? round($total / $count, 2) : 0;
+      }
+
+      // Call the functions
+      $studentName = "Quervie";
+      $grades = [1.5, 1.75, 2.0, 1.25];
+
+      echo "<p>" . greetStudent($studentName) . "</p>";
+      echo "<p>📊 Calculated GPA: <strong>" . calculateGPA($grades) . "</strong></p>";
+    ?>
+  </div>
+  <div class="info-image">
+    <img src="/assets/img/Funct.png" alt="Function Image" />
+  </div>
+</div>
   </div>
 
   <footer>
