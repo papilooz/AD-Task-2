@@ -1,0 +1,554 @@
+/* assets/css/style.css */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: rgb(255, 255, 255);
+    background: linear-gradient(135deg, #1e1e2f, #332626);
+}
+
+.container {
+    display: flex;
+    justify-content: center; /* Center the navigation horizontally */
+    align-items: center;
+    padding: 20px;
+}
+
+nav.nav1 { /* Target the navigation */
+    text-align: center; /* Center the ul within the nav */
+}
+
+nav.nav1 ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: inline-block; /* Allows centering of the ul */
+}
+
+nav.nav1 ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav.nav1 ul li:last-child {
+    margin-right: 0;
+}
+
+/* Regular state of links */
+nav.nav1 ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    position: relative; /* Needed for the underline effect */
+    transition: color 0.3s ease, transform 0.2s ease; /* Smooth transitions */
+}
+
+/* Hover effect for links */
+nav.nav1 ul li a:hover {
+    color: #332626; /* Change text color on hover */
+    background-color: #6e12c4f1; /* Add a background color on hover */
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+/* Animated underline effect */
+nav.nav1 ul li a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 5px;
+    width: 0;
+    height: 2px;
+    background: #ffffff;
+    transition: width 0.3s ease; /* Smooth width transition */
+}
+
+nav.nav1 ul li a:hover::after {
+    width: 100%; /* Full underline width on hover */
+}
+
+header {
+    background: linear-gradient(135deg, #1e1e2f, #332626);
+    padding: 10px 0;
+}
+
+/* New section for background image with overlay */
+.background-section {
+    position: relative;
+    background-image: url('../img/sneaker.webp'); /* Adjust the path to your image */
+    background-size: cover;
+    background-position: center;
+    height:650px;
+    width: 100%;
+    overflow: hidden;
+   
+}
+
+.background-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(51, 36, 33);/* Overlay color */
+    opacity: 0.7;
+    z-index: 1; /* Ensure the overlay is below the floating content */
+}
+
+/* Style for the floating packages section */
+.package-selection {
+    background: linear-gradient(135deg, #1e1e2f, #332626);
+    border-radius: 15px;
+    padding: 60px 20px; /* Adjusted padding */
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    margin-top: 120px;
+    max-width: 960px;
+    width: 95%; /* Make it responsive width-wise */
+    box-sizing: border-box;
+    position: relative;
+    z-index: 10;
+    margin-bottom: 40px;
+    opacity: 0;
+    transform: scale(0.9); /* Start slightly scaled down */
+    animation: scaleFadeIn 0.8s ease-out 0.6s forwards;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: auto; /* Center horizontally */
+    margin-right: auto; /* Center horizontally */
+}
+
+@keyframes scaleFadeIn {
+    to {
+        opacity: 1;
+        transform: scale(1); /* Scale to its normal size */
+    }
+}
+
+.package-selection h2 {
+    margin-top: 0;
+    margin-bottom: 10px; /* Adjusted margin */
+    color:  rgb(255, 255, 255);
+    font-weight: 700;
+    font-size: 2em; /* Adjusted heading size */
+}
+
+.package-selection h2:first-child {
+    margin-bottom: 5px;
+}
+
+.separator {
+    width: 50px; /* Adjusted separator width */
+    height: 3px; /* Adjusted separator height */
+    background-color: #bbb;
+    margin: 15px auto; /* Adjusted margin */
+}
+
+.package-selection .subtitle {
+    color: #555;
+    margin-bottom: 30px; /* Adjusted margin */
+    font-size: 1em; /* Adjusted subtitle size */
+    font-weight: 300;
+}
+
+.event-types {
+    display: flex;
+    gap: 20px; /* Adjusted gap */
+    padding: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-nav-item {
+    text-align: center;
+    width: auto; /* Adjust width for wrapping */
+}
+
+.icon-circle {
+    width: 100px; /* Adjusted circle size */
+    height: 100px;
+    border-radius: 50%;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, border-color 0.3s ease, transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out, opacity 0.2s ease-in-out;
+    position: relative;
+    overflow: hidden;
+}
+
+.icon-circle:hover {
+    background-color:  rgb(51, 36, 33);
+    border-color: #4dd0e1;
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    opacity: 1;
+}
+
+.icon-circle img {
+    max-width: 60%;
+    max-height: 60%;
+    object-fit: contain;
+    transition: opacity 0.2s ease-in-out;
+}
+
+.icon-circle:hover img {
+    opacity: 0.8;
+}
+
+.icon-nav-item a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+}
+
+.icon-nav-item h3 {
+    margin-top: 8px;
+    font-size: 0.9em; /* Adjusted heading size */
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.icon-nav-item:hover h3 {
+    /* No change on hover for text */
+}
+
+.know-more {
+    display: inline-block;
+    padding: 8px 14px; /* Adjusted padding */
+    background-color:  rgb(51, 36, 33);
+    color: #fff;
+    border-radius: 5px;
+    font-size: 0.8em; /* Adjusted font size */
+    margin-top: 10px;
+    transition: background-color 0.3s ease, transform 0.2s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.icon-nav-item:hover .know-more {
+    /* No change on hover for button */
+}
+
+.know-more:hover {
+    background-color: #503932;
+    transform: scale(1.05);
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+    .hero-section {
+        padding: 100px 20px;
+    }
+
+    .hero-content h2 {
+        font-size: 2.2em;
+    }
+
+    .package-selection {
+        padding: 50px 20px;
+        margin-top: -40px;
+    }
+
+    .event-types {
+        gap: 15px;
+    }
+
+    .icon-circle {
+        width: 80px;
+        height: 80px;
+    }
+
+    .icon-nav-item h3 {
+        font-size: 0.8em;
+    }
+
+    .know-more {
+        font-size: 0.7em;
+        padding: 6px 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-section {
+        padding: 80px 20px;
+    }
+
+    .hero-content h2 {
+        font-size: 2em;
+    }
+
+    .package-selection {
+        padding: 40px 15px;
+        margin-top: -20px;
+    }
+
+    .event-types {
+        gap: 10px;
+    }
+
+    .icon-circle {
+        width: 70px;
+        height: 70px;
+    }
+
+    .icon-nav-item h3 {
+        font-size: 0.7em;
+    }
+
+    .know-more {
+        font-size: 0.6em;
+        padding: 5px 8px;
+    }
+}
+
+@media (max-width: 600px) {
+    .hero-section {
+        padding: 60px 15px;
+    }
+
+    .hero-content h2 {
+        font-size: 1.8em;
+    }
+
+    .package-selection {
+        padding: 30px 15px;
+        margin-top: 10px;
+    }
+
+    .event-types {
+        flex-direction: row; /* Keep icons in a row on slightly larger phones */
+        justify-content: space-around; /* Distribute icons more evenly */
+        gap: 10px;
+    }
+
+    .icon-circle {
+        width: 60px;
+        height: 60px;
+    }
+
+    .icon-nav-item h3 {
+        font-size: 0.6em;
+    }
+
+    .know-more {
+        font-size: 0.5em;
+        padding: 4px 6px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-section {
+        padding: 50px 10px;
+    }
+
+    .hero-content h2 {
+        font-size: 1.6em;
+    }
+
+    .package-selection {
+        padding: 20px 10px;
+        margin-top: 15px;
+    }
+
+    .event-types {
+        flex-direction: column; /* Stack icons on smaller phones */
+        align-items: center;
+        gap: 20px;
+    }
+
+    .icon-circle {
+        width: 80px;
+        height: 80px;
+    }
+
+    .icon-nav-item h3 {
+        font-size: 0.7em;
+    }
+
+    .know-more {
+        font-size: 0.6em;
+    }
+}
+.repair-section {
+            padding: 50px 10%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+    background: linear-gradient(135deg, #1e1e2f, #332626);
+        }
+        .container {
+            display: flex;
+            gap: 40px;
+        }
+        .left-content {
+            position: relative;
+        }
+.trusted-box {
+    background-image: url('../img/football.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #000000;
+    padding: 15px;
+    text-align: center;
+    border-radius: 8px;
+    position: absolute;
+    width: 150px; /* Set desired width */
+    height: 120px; /* Set desired height */
+}
+
+.experience-box {
+  background-image: url('../img/quervie1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #000000;
+    padding: 15px;
+    text-align: center;
+    border-radius: 8px;
+    position: absolute;
+    width: 150px; /* Set desired width */
+    height: 120px; /* Set desired height */
+}
+
+
+
+
+        .trusted-box {
+            top: -20px;
+            left: -30px;
+        }
+        .experience-box {
+            bottom: -20px;
+            right: -30px;
+        }
+        .main-image {
+            width: 400px;
+            height: auto;
+            border-radius: 10px;
+        }
+        .right-content {
+            max-width: 450px;
+        }
+        .service-box {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            padding: 15px;
+            background-color: rgb(51, 36, 33);
+            border-radius: 8px;
+            margin-top: 10px;
+            transition: 0.3s ease;
+            color: rgb(255, 255, 255);
+        }
+        .service-box:hover {
+            background: rgb(90, 70, 44);
+            color: rgb(255, 255, 255);
+        }
+        .service-box i {
+            font-size: 24px;
+        }
+
+        .trusted-box, .experience-box {
+            background-color: rgb(51, 36, 33);
+            color: #ffffff;
+            padding: 15px;
+            text-align: center;
+            border-radius: 8px;
+            position: absolute;
+            animation: floatAnimation 1s infinite ease-in-out alternate;
+        }
+
+        @keyframes floatAnimation {
+            0% {
+                transform: translateY(0);
+            }
+            100% {
+                transform: translateY(-10px);
+            }
+        }
+        .work-process {
+            padding: 50px 20px;
+        }
+        .main-title {
+            font-size: 28px;
+            font-weight: bold;
+            margin-bottom: 40px;
+        }
+        .process-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 50px;
+            position: relative;
+        }
+        .process-item {
+            width: 250px;
+            text-align: center;
+            position: relative;
+        }
+        .icon-container {
+            background-color: black;
+            color: white;
+            width: 60px;
+            height: 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            font-size: 24px;
+            margin: 0 auto 15px;
+        }
+        h3 {
+            font-size: 18px;
+            font-weight: bold;
+        }
+        p {
+    font-size: 14px;
+    color: #ffffff;
+    line-height: 1.8;
+}
+
+        .process-container::before {
+            content: '';
+            position: absolute;
+            top: 50px;
+            width: 60%;
+            height: 100px;
+            border-top: 2px dashed gray;
+            border-radius: 100px;
+            left: 20%;
+        }
+        .hero:hover {
+            opacity: 0.8;
+            transition: 0.5s;
+        }
+footer {
+    background-color:  rgb(51, 36, 33);
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 14px;
+}
+
+.footer-container a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.social-icon {
+    width: 24px; /* Adjust size as needed */
+    height: 24px;
+    transition: transform 0.3s ease;
+}
+
+.social-icon:hover {
+    transform: scale(1.1); /* Slight zoom on hover */
+}
+
+

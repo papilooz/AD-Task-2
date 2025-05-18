@@ -1,0 +1,174 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #1e1e2f, #332626);
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    flex-direction: column;
+}
+nav.nav1 { /* Target the navigation */
+    text-align: center; /* Center the ul within the nav */
+}
+
+nav.nav1 ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: inline-block; /* Allows centering of the ul */
+}
+
+nav.nav1 ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav.nav1 ul li:last-child {
+    margin-right: 0;
+}
+
+/* Regular state of links */
+nav.nav1 ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    position: relative; /* Needed for the underline effect */
+    transition: color 0.3s ease, transform 0.2s ease; /* Smooth transitions */
+}
+
+/* Hover effect for links */
+nav.nav1 ul li a:hover {
+    color: #332626; /* Change text color on hover */
+    background-color: #6e12c4f1; /* Add a background color on hover */
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+/* Animated underline effect */
+nav.nav1 ul li a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 5px;
+    width: 0;
+    height: 2px;
+    background: #ffffff;
+    transition: width 0.3s ease; /* Smooth width transition */
+}
+
+nav.nav1 ul li a:hover::after {
+    width: 100%; /* Full underline width on hover */
+}
+header {
+    background: linear-gradient(135deg, #1e1e2f, #332626);
+    padding: 10px 0;
+}
+footer {
+    background-color: rgb(51, 36, 33);
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 14px;
+    width: 100%;
+}
+.footer-container a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.social-icon {
+    width: 24px;
+    height: 24px;
+    transition: transform 0.3s ease;
+}
+
+.social-icon:hover {
+    transform: scale(1.1);
+}
+
+.info-box {
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.07);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 20px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 20px;
+    flex-basis: 12%; /* Added flex-basis */
+    flex-grow: 1; /* Added flex-grow */
+    margin-left: -120px;
+    height: 230px;
+}
+
+.info-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.4);
+}
+
+.info-box h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #f7f7f7;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.info-box p {
+    font-size: 16px;
+    margin: 8px 0;
+    color: #e0e0e0;
+}
+
+.info-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 900px;
+    margin-top: 20px;
+}
+
+
+.info-image {
+    flex-shrink: 0;
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    flex-basis: 60%; /* Added flex-basis */
+    margin-right: -120px;
+}
+
+.info-image img {
+    max-width: 80%;
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease;
+}
+
+.info-image img:hover {
+    transform: scale(1.03);
+}
+
+@media (min-width: 768px) {
+    .info-wrapper {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .info-box {
+        margin-bottom: 0;
+    }
+}
