@@ -6,7 +6,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AD-Task-1</title>
+    <title>AD-Task-2</title>
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
       <link rel="icon" href="/assets/img/qwe.png" type="image/x-icon">
@@ -29,7 +29,7 @@
     <section class="background-section">
       
      <div class="package-selection">
-        <h2>AD-Task-1</h2>
+        <h2>AD-Task-2</h2>
         <div class="separator"></div>
         <div class="event-types icon-nav-container">
             <div class="event-item icon-nav-item">
@@ -37,7 +37,7 @@
                     <div class="icon-circle">
                         <img src="/assets/img/declar.png" alt="">
                     </div>
-                    <h3>Declarations</h3>
+                    <h3>Arrays</h3>
                     <span class="know-more">Show</span>
                 </a>
             </div>
@@ -46,7 +46,7 @@
                     <div class="icon-circle">
                         <img src="/assets/img/declar.png" alt="">
                     </div>
-                    <h3>Conditional</h3>
+                    <h3>Dictionaries</h3>
                                        <span class="know-more">Show</span>
 
                 </a>
@@ -56,7 +56,17 @@
                     <div class="icon-circle">
                         <img src="/assets/img/declar.png" alt="">
                     </div>
-                    <h3>Looping</h3>
+                    <h3>Functions</h3>
+                 <span class="know-more">Show</span>
+
+                </a>
+            </div>
+             <div class="event-item icon-nav-item">
+                <a href="../page/Requirements.php">
+                    <div class="icon-circle">
+                        <img src="/assets/img/declar.png" alt="">
+                    </div>
+                    <h3>Fragmentation</h3>
                  <span class="know-more">Show</span>
 
                 </a>

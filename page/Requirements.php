@@ -6,7 +6,7 @@
   <link rel="stylesheet" href="/assets/css/req.css" />
         <link rel="icon" href="/assets/img/qwe.png" type="image/x-icon">
 
-  <title>Ad-Task-1</title>
+  <title>Ad-Task-2</title>
 
 </head>
 <body>
@@ -85,6 +85,22 @@
     <img src="/assets/img/Funct.png" alt="Function Image" />
   </div>
 </div>
+<h1 style="text-align: center; margin: 40px 0 20px;">🧩 Fragmentation</h1>
+<div class="info-wrapper" style="margin-top: 20px;">
+  <div class="info-box">
+    <?php
+      include_once './assets/fragments.php'; // Include the external PHP fragment
+
+      echo getQuote();
+      echo "<h3 style='margin-top: 20px;'>📚 Languages I Use</h3>";
+      echo getLanguages();
+    ?>
+  </div>
+  <div class="info-image">
+    <img src="/assets/img/frag.png" alt="Fragmentation Image" />
+  </div>
+</div>
+
   </div>
 
   <footer>
