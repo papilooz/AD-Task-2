@@ -45,8 +45,8 @@ nav.nav1 ul li a {
 
 /* Hover effect for links */
 nav.nav1 ul li a:hover {
-    color: #332626; /* Change text color on hover */
-    background-color: #6e12c4f1; /* Add a background color on hover */
+    color: #fdfdfd; /* Change text color on hover */
+    background-color: #128cc4f1; /* Add a background color on hover */
     transform: scale(1.05); /* Slight zoom effect on hover */
 }
 
@@ -67,20 +67,19 @@ nav.nav1 ul li a:hover::after {
 }
 
 header {
-    background: linear-gradient(135deg, #1e1e2f, #332626);
+    background: linear-gradient(135deg, #690092d8);
     padding: 10px 0;
 }
 
 /* New section for background image with overlay */
 .background-section {
     position: relative;
-    background-image: url('../img/sneaker.webp'); /* Adjust the path to your image */
+    background-image: url('../img/webdes.jpg'); /* Adjust the path to your image */
     background-size: cover;
     background-position: center;
-    height:650px;
+    height:40%;
     width: 100%;
     overflow: hidden;
-   
 }
 
 .background-section::before {
@@ -90,14 +89,13 @@ header {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgb(51, 36, 33);/* Overlay color */
     opacity: 0.7;
     z-index: 1; /* Ensure the overlay is below the floating content */
 }
 
 /* Style for the floating packages section */
 .package-selection {
-    background: linear-gradient(135deg, #1e1e2f, #332626);
+    background: linear-gradient(135deg, #562391, #13eb54);
     border-radius: 15px;
     padding: 60px 20px; /* Adjusted padding */
     text-align: center;
@@ -221,7 +219,7 @@ header {
 .know-more {
     display: inline-block;
     padding: 8px 14px; /* Adjusted padding */
-    background-color:  rgb(51, 36, 33);
+    background-color:  rgb(21, 77, 44);
     color: #fff;
     border-radius: 5px;
     font-size: 0.8em; /* Adjusted font size */
@@ -378,7 +376,7 @@ header {
             display: flex;
             justify-content: center;
             align-items: center;
-    background: linear-gradient(135deg, #1e1e2f, #332626);
+    background: linear-gradient(135deg, #562391, #13eb54);
         }
         .container {
             display: flex;
@@ -439,14 +437,14 @@ header {
             align-items: center;
             gap: 15px;
             padding: 15px;
-            background-color: rgb(51, 36, 33);
+    background: linear-gradient(135deg, #0a996e, #064d75);
             border-radius: 8px;
             margin-top: 10px;
             transition: 0.3s ease;
             color: rgb(255, 255, 255);
         }
         .service-box:hover {
-            background: rgb(90, 70, 44);
+            background: rgb(20, 121, 151);
             color: rgb(255, 255, 255);
         }
         .service-box i {
@@ -528,7 +526,7 @@ header {
             transition: 0.5s;
         }
 footer {
-    background-color:  rgb(51, 36, 33);
+    background: linear-gradient(135deg, #690092d8);
     color: #fff;
     padding: 20px 0;
     text-align: center;
