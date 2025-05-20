@@ -4,7 +4,7 @@
 
 <br />
 <div align="center">
-  <a href="https://github.com/zyx-0314/">
+  <a href="https://github.com/zyx-0314/](https://github.com/papilooz/AD-Task-2.git">
   <!-- TODO: If you want to add logo or banner you can add it here -->
     <img src="./assets/img/elite.png" alt="Nyebe" width="130" height="100">
   </a>
