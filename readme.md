@@ -115,9 +115,13 @@ Description of the project in details.
 AD-ProjectName
 └─ assets
 |   └─ css
-|   |   └─ name.css
+|   |   └─ req.css
+        └─ style.css
 |   └─ img
-|   |   └─ name.jpeg/.jpg/.webp/.png
+|   |   └─ array.png
+        └─ dict.png
+        └─ funct.png
+        └─ frag.png
 |   └─ js
 |       └─ name.js
 └─ components
@@ -131,7 +135,8 @@ AD-ProjectName
 |     |  |  └─ name.jpeg/.jpg/.webp/.png
 |     |  └─ js
 |     |     └─ name.js
-|     └─ index.php
+|     └─ fragments.php
+      └─ requirements.php
 └─ utils
 |   └─ Name.utils.php
 └─ index.php
