@@ -2,7 +2,7 @@ body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    background: linear-gradient(135deg, #1e1e2f, #332626);
+    background: linear-gradient(135deg, #562391, #13eb54);
     color: white;
     min-height: 100vh;
     display: flex;
@@ -47,8 +47,8 @@ nav.nav1 ul li a {
 
 /* Hover effect for links */
 nav.nav1 ul li a:hover {
-    color: #332626; /* Change text color on hover */
-    background-color: #6e12c4f1; /* Add a background color on hover */
+    color: #fdfdfd; /* Change text color on hover */
+    background-color: #128cc4f1; /* Add a background color on hover */
     transform: scale(1.05); /* Slight zoom effect on hover */
 }
 
@@ -68,11 +68,11 @@ nav.nav1 ul li a:hover::after {
     width: 100%; /* Full underline width on hover */
 }
 header {
-    background: linear-gradient(135deg, #1e1e2f, #332626);
+    background: linear-gradient(135deg, #690092d8);
     padding: 10px 0;
 }
 footer {
-    background-color: rgb(51, 36, 33);
+    background: linear-gradient(135deg, #690092d8);
     color: #fff;
     padding: 20px 0;
     text-align: center;
