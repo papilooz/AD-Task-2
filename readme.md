@@ -13,7 +13,7 @@
 
   <!-- TODO: Make a short description -->
   <div align="center">
-    Short Description. (Optional)
+   
   </div>
 </div>
 
@@ -22,7 +22,6 @@
 <!-- TODO: Change the zyx-0314 into your GitHub username -->
 <!-- TODO: Change the AD-CI4-Template-Project into the correct project folder name -->
 
-![](https://visit-counter.vercel.app/counter.png?page=zyx-0314/AD-CI4-Template-Project)
 
 [![wakatime](https://wakatime.com/badge/user/018dd99a-4985-4f98-8216-6ca6fe2ce0f8/project/63501637-9a31-42f0-960d-4d0ab47977f8.svg)](https://wakatime.com/badge/user/018dd99a-4985-4f98-8216-6ca6fe2ce0f8/project/63501637-9a31-42f0-960d-4d0ab47977f8)
 
@@ -102,7 +101,7 @@ Description of the project in details.
 10. File Structure to follow below.
 
 ```
-AD-ProjectName
+AD-Task-2
 └─ assets
 |   └─ css
 |   |   └─ req.css
@@ -112,12 +111,20 @@ AD-ProjectName
         └─ dict.png
         └─ funct.png
         └─ frag.png
+        └─ football.jpg
+        └─ facebook.png
+        └─ linkedin.png
+        └─ instagram.png
+        └─ frag.png
+        └─ webdes.jpg
+        └─ quervie.jpg
+        └─ quervie1.jpg
 |   └─ js
 |       └─ name.js
 └─ components
-|   └─ name.component.php
+|   └─ fragments.php
 └─ pages
-|  └─ pageName
+|  └─ Requirements
 |     └─ assets
 |     |  └─ css
 |     |  |  └─ name.css
@@ -125,12 +132,16 @@ AD-ProjectName
 |     |  |  └─ name.jpeg/.jpg/.webp/.png
 |     |  └─ js
 |     |     └─ name.js
-|     └─ fragments.php
-      └─ requirements.php
+|     └─ index.php
+     
 └─ utils
 |   └─ Name.utils.php
+└─ bootstrap.php
+└─ composer.json
+└─ composer.lock
 └─ index.php
 └─ readme.md
+└─ router.php
 ```
 > The following should be renamed: name.css, name.js, name.jpeg/.jpg/.webp/.png, name.component.php(but not the part of the `component.php`), Name.utils.php(but not the part of the `utils.php`)
 
