@@ -33,7 +33,7 @@
         <div class="separator"></div>
         <div class="event-types icon-nav-container">
             <div class="event-item icon-nav-item">
-                <a href="../page/Requirements.php">
+                <a href="./page/Requirements/index.php">
                     <div class="icon-circle">
                         <img src="/assets/img/declar.png" alt="">
                     </div>
@@ -42,7 +42,7 @@
                 </a>
             </div>
             <div class="event-item icon-nav-item">
-                <a href="../page/Requirements.php">
+                <a href="./page/Requirements/index.php">
                     <div class="icon-circle">
                         <img src="/assets/img/declar.png" alt="">
                     </div>
@@ -52,7 +52,7 @@
                 </a>
             </div>
              <div class="event-item icon-nav-item">
-                <a href="../page/index.php">
+                <a href="./page/Requirements/index.php">
                     <div class="icon-circle">
                         <img src="/assets/img/declar.png" alt="">
                     </div>
@@ -62,7 +62,7 @@
                 </a>
             </div>
              <div class="event-item icon-nav-item">
-                <a href="../page/Requirements.php">
+               <a href="./page/Requirements/index.php">
                     <div class="icon-circle">
                         <img src="/assets/img/declar.png" alt="">
                     </div>
