@@ -1,0 +1,15 @@
+{
+    "name": "63947/ad-task-2",
+    "autoload": {
+        "psr-4": {
+            "63947\\AdTask2\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "papilooz",
+            "email": "manriquequervie@gmail.com"
+        }
+    ],
+    "require": {}
+}
