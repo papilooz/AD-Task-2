@@ -89,7 +89,7 @@
 <div class="info-wrapper" style="margin-top: 20px;">
   <div class="info-box">
     <?php
-      include_once './assets/fragments.php'; // Include the external PHP fragment
+      include_once '../../components/fragments.php';
 
       echo getQuote();
       echo "<h3 style='margin-top: 20px;'>📚 Languages I Use</h3>";
