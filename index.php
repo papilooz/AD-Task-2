@@ -20,7 +20,7 @@
             <nav class="nav1">
                 <ul>
                     <li><a href="index.php">About Me</a></li>
-                    <li><a href="../page/Requirements.php">AD-Task-2</a></li>
+                    <li><a href="./page/index.php">AD-Task-2</a></li>
                 </ul>
             </nav>
         </div>
@@ -52,7 +52,7 @@
                 </a>
             </div>
              <div class="event-item icon-nav-item">
-                <a href="../page/Requirements.php">
+                <a href="../page/index.php">
                     <div class="icon-circle">
                         <img src="/assets/img/declar.png" alt="">
                     </div>
