@@ -108,13 +108,13 @@
       <p>&copy; 2025 Quervie Manrique. All rights reserved.</p>
       <p>Follow me on
         <a href="https://www.facebook.com/kervimanrique/" target="_blank">
-          <img src="../assets/img/facebook.png" alt="Facebook" class="social-icon" />
+          <img src="./assets/img/facebook.png" alt="Facebook" class="social-icon" />
         </a>
         <a href="https://www.instagram.com/qrvi146/" target="_blank">
-          <img src="../assets/img/instagram.png" alt="Instagram" class="social-icon" />
+          <img src="./assets/img/instagram.png" alt="Instagram" class="social-icon" />
         </a>
         <a href="https://ph.linkedin.com/in/quervie-manrique-9863a928b" target="_blank">
-          <img src="../assets/img/linkedin.png" alt="LinkedIn" class="social-icon" />
+          <img src="./assets/img/linkedin.png" alt="LinkedIn" class="social-icon" />
         </a>
       </p>
       <p>Contact: manriquequervie@gmail.com</p>
