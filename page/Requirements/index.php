@@ -97,7 +97,7 @@
     ?>
   </div>
   <div class="info-image">
-    <img src="/assets/img/frag.png" alt="Fragmentation Image" />
+    <img src="../../assets/img/frag.png" alt="Fragmentation Image" />
   </div>
 </div>
 
